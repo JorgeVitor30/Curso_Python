@@ -21,7 +21,7 @@ class Bola:
         
     def mostrarArea(self):
         pi = 3.14
-        return f'Área: {pow(pi,2) * self.raio:.2f} cm '
+        return f'Área: {pow(pi,2) * self.raio:.2f} cm² '
         
         
 b1 = Bola('Azul',15,'ferro')
