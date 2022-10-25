@@ -20,7 +20,7 @@ class Bola:
         print()
         
     def mostrarArea(self):
-        pi = 3.14
+        pi = 3.141
         return f'Área: {pow(pi,2) * self.raio:.2f} cm² '
         
         
