@@ -4,7 +4,7 @@ class bombaCombustivel:
         self.maxTanque = limiteTanque
         self.qtd_bomba = 1000
         self.litroG = 5.25
-        self.litroA = 4.95
+        self.litroA = 4.97
 
 
         
