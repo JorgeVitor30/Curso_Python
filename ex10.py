@@ -52,6 +52,6 @@ print('-='*15)
 print()
 print(f'Nome : {p2.nome}\nIdade: {p2.idade}\nPeso: {p2.peso}\nAltura: {p2.altura:.2f}')
 print()
-print('-='*15)
+print('-='*16)
 print(f'Nome : {p3.nome}\nIdade: {p3.idade}\nPeso: {p3.peso}\nAltura: {p3.altura:.2f}')
 
