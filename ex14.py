@@ -26,7 +26,7 @@ class CarrinhoDeCompra:
                 print(produto.nome,produto.valor)
         
 
-class Produto:  # CLASSE FIXA DE PRODUTO, SOMENTE PARA A BASE DO PROGRAMA
+class Produto:  # CLASSE FIXA DE PRODUTO, SOMENTE PARA A BASE 
     def __init__(self, nome, valor):
         self.nome = nome
         self.valor = valor
