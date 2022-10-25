@@ -64,7 +64,6 @@ b1.dar_comida(5)
 
 
 b1.status()
-# FOME TÁ 60 , AMANHÃ É PRA TAR 65
 
 
 b2.alt_idade(50)
