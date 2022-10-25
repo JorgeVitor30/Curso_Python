@@ -41,7 +41,7 @@ m1.comer('Laranja')
 m1.comer('Maça')
 
 m1.verBucho()
-m1.digerir('Graviola')
+m1.digerir('Melancia')
 m1.digerir('Maça')
 m1.verBucho()
 
