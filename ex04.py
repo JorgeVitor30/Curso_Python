@@ -18,4 +18,4 @@ print('-='*15)
 print(f'{a:<10} {b:>7} {c:>11}')
 for ind , nome , media in lista:
     print(f'{ind:<10} {nome:>8} {media:>8}')
-print('-='*15)  
+print('-='*16)  
