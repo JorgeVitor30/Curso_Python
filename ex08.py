@@ -30,7 +30,7 @@ while True:
         n1 = str(input('Digite seu nome: '))
         idad1 = int(input('Digite sau idade: '))
         sexo = str(input('Digite sau sexo[M/F]: ').upper())
-        Pessoa(n1,idad1,sexo,randint(1000,9999))
+        Pessoa(n1,idad1,sexo,randint(1001,9999))
         
     if resp == 0:
         break
