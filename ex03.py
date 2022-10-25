@@ -23,5 +23,5 @@ def encontra_primeiro_duplicado(lista_de_numeros):
         numeros_checados.add(numero)
     return primeiro_duplicado
 
-for x in lista_de_inteiros:
-    print(encontra_primeiro_duplicado(x), x)
+for X in lista_de_inteiros:
+    print(encontra_primeiro_duplicado(X), X)
