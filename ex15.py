@@ -13,7 +13,7 @@ class Cliente:
             print(self.nome, end = ': ')
             print(endereco.cidade, endereco.estado, endereco.num)
             if endereco.num % 2 == 1:
-                print('Taxa mais alta de entrega')
+                print('Taxa mais alta de entrega.')
             print()
 
 
