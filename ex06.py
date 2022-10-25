@@ -16,7 +16,7 @@ def linha():
     print()    
     print()
 
-print('-=' * 15)
+print('-=' * 16)
 print('Organizado de acordo com a Idade: \n')
 
 a = [x for x in dados]
