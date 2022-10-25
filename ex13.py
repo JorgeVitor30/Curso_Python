@@ -1,6 +1,6 @@
 class carro:
     def __init__(self,kmpl,tanque = 0):
-        self.kmpl = kmpl    # km/l
+        self.kmpl = kmpl    # km/L
         self.tanque = tanque    #L  
     
 
