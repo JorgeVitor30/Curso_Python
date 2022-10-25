@@ -14,7 +14,7 @@ def desfazer(lista , lista_modif):
         print('Nada a Desfazer')
         return
     
-    ultima_lista = lista.pop()       ## LISTA SUPORTE
+    ultima_lista = lista.pop()       # LISTA SUPORTE
     lista_modif.append(ultima_lista) 
 
 
@@ -22,7 +22,7 @@ def refazer(lista , lista_modif):
     if not lista_modif:
         print('Nada pra Refazer')
 
-    ultima_lista = lista_modif.pop()    ## LISTA SUPORTE
+    ultima_lista = lista_modif.pop()    # LISTA SUPORTE
     lista.append(ultima_lista)
     
 
