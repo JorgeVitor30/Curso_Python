@@ -1,0 +1,59 @@
+import sqlite3
+
+
+class AgendaDB:
+    def __init__(self, arquivo):
+        self.conn = sqlite3.connect(arquivo)
+        self.cursor = self.conn.cursor()
+
+    def inserir(self, nome, telefone):
+        consulta = 'INSERT OR IGNORE INTO agenda (nome, telefone) VALUES (?, ?)'
+        self.cursor.execute(consulta, (nome, telefone))
+        self.conn.commit()
+
+    def editar(self, nome, telefone, id):
+        consulta = 'UPDATE OR IGNORE agenda SET nome=?, telefone=? WHERE id=?'
+        self.cursor.execute(consulta, (nome, telefone, id))
+        self.conn.commit()
+
+    def excluir(self, id):
+        consulta = 'DELETE FROM agenda WHERE id=?'
+        self.cursor.execute(consulta, (id,))
+        self.conn.commit()
+
+    def listar(self):
+        self.cursor.execute('SELECT * FROM agenda') #    * = ALL
+
+        for linha in self.cursor.fetchall():
+            print(linha)
+
+    def buscar(self, valor):
+        consulta = 'SELECT * FROM agenda WHERE nome LIKE ?'
+        self.cursor.execute(consulta, (f'%{valor}%',))
+
+        for linha in self.cursor.fetchall():
+            print(linha)
+
+    def fechar(self):
+        self.cursor.close()
+        self.conn.close()
+
+
+if __name__ == '__main__':
+    agenda = AgendaDB('agenda.db')
+    agenda.inserir('João','111111')
+    agenda.inserir('Vitor','222222')
+    agenda.inserir('Arthur','333333')
+    agenda.inserir('Jon','444444')
+    agenda.inserir('Levy','555555')
+    agenda.inserir('Barros','666666')
+    agenda.editar('Fran', '1010515', 28)
+    agenda.excluir(28)
+    agenda.inserir('Ana Maria','777777')
+    agenda.inserir('Ana Braga','888888')
+    agenda.inserir('Ana Luiza','999999')
+    agenda.inserir('Maria Ana','101010')
+    
+    agenda.buscar('Ana')
+
+    
