@@ -2,7 +2,6 @@
 from abc import ABC, abstractclassmethod
 
 
-
 class VeiculoLuxo(ABC):
     @abstractclassmethod
     def buscar_cliente(self) -> None:
